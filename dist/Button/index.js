@@ -12,6 +12,6 @@ var __rest = (this && this.__rest) || function (s, e) {
 import * as React from 'react';
 const Button = (_a) => {
     var { children, variant } = _a, rest = __rest(_a, ["children", "variant"]);
-    return (React.createElement("button", Object.assign({}, rest, { className: `btn btn--${variant} CTA` }), children));
+    return (React.createElement("button", Object.assign({}, rest, { className: `button ${variant}` }), children));
 };
 export default Button;

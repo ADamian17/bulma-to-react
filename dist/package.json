@@ -1,6 +1,6 @@
 {
   "name": "ad-bulma-react",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "files": [ "dist", "README.md" ],
   "private": false,
