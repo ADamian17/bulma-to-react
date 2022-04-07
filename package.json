@@ -1,8 +1,7 @@
 {
-  "name": "bulma-to-react",
+  "name": "bulma-react-dos",
   "version": "1.0.0",
   "main": "lib/index.js",
-  "module": "dist/index.js",
   "files": [ "dist", "README.md" ],
   "private": false,
   "repository": {
