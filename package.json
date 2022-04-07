@@ -53,5 +53,9 @@
     "@babel/preset-env": "^7.16.11",
     "sass": "^1.50.0",
     "typescript-plugin-css-modules": "^3.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADamian17/bulma-to-react"
   }
 }
