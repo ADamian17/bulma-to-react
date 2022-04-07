@@ -1,7 +1,9 @@
 {
-  "name": "bulma-to-react",
+  "name": "ad-bulma-react",
   "version": "1.0.0",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
+  "files": [ "dist", "README.md" ],
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git@github.com:ADamian17/bulma-to-react.git"

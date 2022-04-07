@@ -7,7 +7,11 @@
     "outDir": "dist",
     "target": "es6",
     "module": "es6",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "typeRoots": [
+      "../node_modules/@types",
+      "../@types"
+    ]
   },
   "include": ["src"]
 }
