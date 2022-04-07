@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 
-type BadgeProps = {
+declare type BadgeProps = {
   value: number;
   [key: string]: any;
 };
