@@ -1,2 +1,10 @@
 export { default as Badge } from './Badge';
+export { default as Block } from './Block';
+export { default as Box } from './Box';
 export { default as Button } from './Button';
+export { default as Buttons } from './Buttons';
+export { default as Column } from './Column';
+export { default as Columns } from './Columns';
+export { default as Content } from './Content';
+export { default as Icon } from './Icon';
+export { default as Delete } from './Delete';

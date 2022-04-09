@@ -1,5 +1,6 @@
-<h1>AD Bulma React</h1>
+# AD Bulma React
 
+> 🚨 &nbsp;this still a work in progress;
 ## Install
 ```bash
 npm i ad-bulma-react
