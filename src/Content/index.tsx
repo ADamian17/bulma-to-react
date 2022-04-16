@@ -1,11 +1,18 @@
-import React from 'react'
+import React from 'react';
 
 type ContentType = {
-  size: 'is-small' | 'is-medium' | 'is-large'
-}
+  className: string;
+  size: 'is-small' | 'is-medium' | 'is-large';
+  [key: string]: any;
+};
 
-const Content: React.FC<ContentType> = ({ size, children }) => (
-  <div className={`content ${size}`}>
+const Content: React.FC<ContentType> = ({
+  size,
+  className,
+  children,
+  ...rest
+}) => (
+  <div className={`content ${className} ${size}`} {...rest}>
     {children}
   </div>
 );

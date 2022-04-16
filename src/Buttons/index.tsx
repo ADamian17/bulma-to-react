@@ -1,15 +1,23 @@
 import * as React from 'react';
 
 type ButtonsType = {
+  className?: string;
   hasAddons?: boolean;
-  alignment?: 'is-centered' | 'is-right';  
-}
+  alignment?: 'is-centered' | 'is-right';
+  [key: string]: any;
+};
 
-const Buttons: React.FC<ButtonsType> = ({ hasAddons, alignment, children }) => {
+const Buttons: React.FC<ButtonsType> = ({
+  className,
+  hasAddons,
+  alignment,
+  children,
+  ...rest
+}) => {
   return (
-    <button className={`buttons ${hasAddons} ${alignment}`}>
+    <div className={`buttons ${className} ${hasAddons} ${alignment}`} {...rest}>
       {children}
-    </button>
+    </div>
   );
 };
 

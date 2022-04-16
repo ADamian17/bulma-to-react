@@ -1,10 +1,17 @@
-import React from 'react'
+import React from 'react';
 type DeleteType = {
-  size: 'is-small' | 'is-medium' | 'is-large'
-}
+  className: string;
+  size: 'is-small' | 'is-medium' | 'is-large';
+  [key: string]: any;
+};
 
-const Delete: React.FC<DeleteType> = ({ size, children }) => (
-  <div className={`delete ${size}`}>
+const Delete: React.FC<DeleteType> = ({
+  size,
+  children,
+  className,
+  ...rest
+}) => (
+  <div className={`delete ${size}`} {...rest}>
     {children}
   </div>
 );
