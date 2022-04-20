@@ -5,4 +5,6 @@ export declare type ColumnsType = {
     responsive?: ColumnsResponsiveType;
     gag?: ColumnsGapType;
     options?: ColumnOptionsType;
+    className?: string;
+    [key: string]: any;
 };

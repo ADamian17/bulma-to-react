@@ -11,15 +11,17 @@ var __rest = (this && this.__rest) || function (s, e) {
 };
 import * as React from 'react';
 const Button = (_a) => {
-    var { children, isDisabled = false, isInverted, isLight, isLoading, isOutlined, isResponsive, isRounded, size, variant } = _a, rest = __rest(_a, ["children", "isDisabled", "isInverted", "isLight", "isLoading", "isOutlined", "isResponsive", "isRounded", "size", "variant"]);
-    return (React.createElement("button", Object.assign({}, rest, { className: `button 
-        ${variant} 
+    var { children, className, isDisabled = false, isInverted, isLight, isLoading, isOutlined, isResponsive, isRounded, size, variant } = _a, rest = __rest(_a, ["children", "className", "isDisabled", "isInverted", "isLight", "isLoading", "isOutlined", "isResponsive", "isRounded", "size", "variant"]);
+    return (React.createElement("button", Object.assign({ className: `button
+        ${className} 
         ${isInverted && 'is-inverted'} 
         ${isLight && 'is-light'} 
         ${isLoading && 'is-loading'} 
         ${isOutlined && 'is-outlined'} 
         ${isResponsive && 'is-responsive'} 
         ${isRounded && 'is-rounded'} 
-        ${size ? size : ''}`, disabled: isDisabled }), children));
+        ${size ? size : ''}
+        ${variant} 
+      ` }, rest, { disabled: isDisabled }), children));
 };
 export default Button;
