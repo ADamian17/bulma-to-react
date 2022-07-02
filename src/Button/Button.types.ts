@@ -15,6 +15,7 @@ export type ButtonVariant =
 export type ButtonSize = 'is-small' | 'is-normal' | 'is-medium' | 'is-large';
 
 export type ButtonProps = {
+  btnText: string;
   className?: string;
   isDisabled?: boolean;
   isInverted?: boolean;

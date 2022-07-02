@@ -13,6 +13,7 @@ const Button: React.FC<ButtonProps> = ({
   isRounded,
   size,
   variant,
+  btnText,
   ...rest
 }) => {
   return (
@@ -31,7 +32,7 @@ const Button: React.FC<ButtonProps> = ({
       {...rest}
       disabled={isDisabled}
     >
-      {children}
+      {btnText}
     </button>
   );
 };
